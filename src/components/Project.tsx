@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProjectProps {
   gallery: string[];
@@ -12,10 +13,13 @@ export default function Project({ gallery, title, subtitle, description }: Proje
     <div className="project-card">
       {/* Gallery */}
       <div className="project-gallery">
-        <img
+        <Image
           src={gallery[0]}
           alt={`${title} - Main Image`}
           className="project-image"
+          width={600}
+          height={400}
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
       

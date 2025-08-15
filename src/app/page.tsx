@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Project from "../components/Project";
 
 export default function About() {
@@ -62,10 +63,13 @@ export default function About() {
         
         <div className="profile-container">
           <div className="profile-box">
-            <img
+            <Image
               src="/profile.jpg"
               alt="Peter Abangan"
               className="profile-image"
+              width={400}
+              height={400}
+              priority
             />
           </div>
         </div>
@@ -78,7 +82,7 @@ export default function About() {
             Featured Projects
           </h2>
           <p className="projects-description">
-            Here are some of the projects I've worked on recently. Each one represents a unique challenge and learning experience.
+            Here are some of the projects I&apos;ve worked on recently. Each one represents a unique challenge and learning experience.
           </p>
           
           {/* Projects Grid */}
