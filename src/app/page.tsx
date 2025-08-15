@@ -5,39 +5,35 @@ export default function About() {
   const projects = [
     {
       gallery: [
-        "https://placehold.co/400x200/2563eb/fff?text=E-Commerce+Dashboard",
-        "https://placehold.co/400x200/1e40af/fff?text=Product+Management"
+        "/cafe-inventory.jpg"
       ],
-      title: "E-Commerce Platform",
-      subtitle: "Full-Stack Web Application",
-      description: "A comprehensive e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and real-time order tracking."
+      title: "Café Inventory System",
+      subtitle: "Power Platform",
+      description: "A low-code inventory system using Power Apps and Power Automate to track stock levels. Serves as the foundation for a future POS application."
     },
     {
       gallery: [
-        "https://placehold.co/400x200/059669/fff?text=Mobile+Banking",
-        "https://placehold.co/400x200/047857/fff?text=Transaction+History"
+        "/catalog-app.jpg"
       ],
-      title: "FinTech Mobile App",
-      subtitle: "React Native Application",
-      description: "A secure mobile banking application with biometric authentication, real-time transactions, budget tracking, and cryptocurrency integration. Built using React Native and Firebase."
+      title: "CaTaLog",
+      subtitle: "React Native & Expo",
+      description: "A full-stack mobile app using React Native and Expo that allows users to track, search, and organize products with ease."
     },
     {
       gallery: [
-        "https://placehold.co/400x200/dc2626/fff?text=Real-Time+Chat",
-        "https://placehold.co/400x200/b91c1c/fff?text=Video+Calls"
+        "/task-manager.jpg"
       ],
-      title: "Communication Platform",
-      subtitle: "WebRTC & Socket.IO",
-      description: "A real-time communication platform featuring instant messaging, video calls, screen sharing, and file transfers. Implemented using WebRTC, Socket.IO, and Express.js backend."
+      title: "Task Manager",
+      subtitle: "Express & MongoDB",
+      description: "A full-stack web app using Express.js and MongoDB that allows users to manage tasks and assign collaborators. Focused on backend logic."
     },
     {
       gallery: [
-        "https://placehold.co/400x200/7c3aed/fff?text=AI+Dashboard",
-        "https://placehold.co/400x200/6d28d9/fff?text=Analytics+View"
+        "/dr-owlii.jpg"
       ],
-      title: "AI Analytics Dashboard",
-      subtitle: "Machine Learning & Data Visualization",
-      description: "An intelligent analytics dashboard that processes large datasets using Python and TensorFlow. Features predictive models, interactive charts, and automated reporting capabilities."
+      title: "Dr. Owlii",
+      subtitle: "Figma",
+      description: "Designed a student productivity app prototype in Figma that combines Pomodoro timer and other student tools. Focused on intuitive mobile UI/UX."
     }
   ];
 
