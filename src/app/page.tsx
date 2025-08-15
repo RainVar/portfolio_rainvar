@@ -14,17 +14,6 @@ export default function About() {
         alignItems: "center"
       }}>
           <div>
-            <img
-              src="/profile.jpg"
-              alt="Peter Abangan"
-              style={{
-                width: 80,
-                height: 80,
-                borderRadius: "50%",
-                objectFit: "cover",
-                marginBottom: "2rem"
-              }}
-            />
             <h1 style={{ 
               fontSize: "3rem", 
               fontWeight: 700, 
@@ -62,24 +51,18 @@ export default function About() {
               height: "400px",
               backgroundColor: "#f0f0f0",
               borderRadius: "1rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundImage: "radial-gradient(circle, #ddd 1px, transparent 1px)",
-              backgroundSize: "20px 20px",
+              overflow: "hidden",
               position: "relative"
             }}>
-              <div style={{
-                width: "200px",
-                height: "200px",
-                backgroundColor: "#000",
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center"
-              }}>
-                <span style={{ color: "#fff", fontSize: "2rem" }}>🚀</span>
-              </div>
+              <img
+                src="/profile.jpg"
+                alt="Peter Abangan"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover"
+                }}
+              />
             </div>
           </div>
         </section>
