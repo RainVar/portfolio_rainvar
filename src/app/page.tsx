@@ -1,6 +1,46 @@
 import React from "react";
+import Project from "../components/Project";
 
 export default function About() {
+  const projects = [
+    {
+      gallery: [
+        "https://placehold.co/400x200/2563eb/fff?text=E-Commerce+Dashboard",
+        "https://placehold.co/400x200/1e40af/fff?text=Product+Management"
+      ],
+      title: "E-Commerce Platform",
+      subtitle: "Full-Stack Web Application",
+      description: "A comprehensive e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and real-time order tracking."
+    },
+    {
+      gallery: [
+        "https://placehold.co/400x200/059669/fff?text=Mobile+Banking",
+        "https://placehold.co/400x200/047857/fff?text=Transaction+History"
+      ],
+      title: "FinTech Mobile App",
+      subtitle: "React Native Application",
+      description: "A secure mobile banking application with biometric authentication, real-time transactions, budget tracking, and cryptocurrency integration. Built using React Native and Firebase."
+    },
+    {
+      gallery: [
+        "https://placehold.co/400x200/dc2626/fff?text=Real-Time+Chat",
+        "https://placehold.co/400x200/b91c1c/fff?text=Video+Calls"
+      ],
+      title: "Communication Platform",
+      subtitle: "WebRTC & Socket.IO",
+      description: "A real-time communication platform featuring instant messaging, video calls, screen sharing, and file transfers. Implemented using WebRTC, Socket.IO, and Express.js backend."
+    },
+    {
+      gallery: [
+        "https://placehold.co/400x200/7c3aed/fff?text=AI+Dashboard",
+        "https://placehold.co/400x200/6d28d9/fff?text=Analytics+View"
+      ],
+      title: "AI Analytics Dashboard",
+      subtitle: "Machine Learning & Data Visualization",
+      description: "An intelligent analytics dashboard that processes large datasets using Python and TensorFlow. Features predictive models, interactive charts, and automated reporting capabilities."
+    }
+  ];
+
   return (
     <main className="main">
       {/* Title Section */}
@@ -56,41 +96,15 @@ export default function About() {
           
           {/* Projects Grid */}
           <div className="projects-grid">
-            <div className="project-card">
-              <h3 className="project-title">
-                Project One
-              </h3>
-              <p className="project-description">
-                A comprehensive web application built with React and Node.js, featuring real-time data processing and user authentication.
-              </p>
-              <a href="#" className="project-link">
-                View Project →
-              </a>
-            </div>
-            
-            <div className="project-card">
-              <h3 className="project-title">
-                Project Two
-              </h3>
-              <p className="project-description">
-                A mobile application developed with React Native, providing seamless cross-platform experience with offline capabilities.
-              </p>
-              <a href="#" className="project-link">
-                View Project →
-              </a>
-            </div>
-            
-            <div className="project-card">
-              <h3 className="project-title">
-                Project Three
-              </h3>
-              <p className="project-description">
-                An innovative API service built with Express.js and MongoDB, handling millions of requests with optimized performance.
-              </p>
-              <a href="#" className="project-link">
-                View Project →
-              </a>
-            </div>
+            {projects.map((project, index) => (
+              <Project
+                key={index}
+                gallery={project.gallery}
+                title={project.title}
+                subtitle={project.subtitle}
+                description={project.description}
+              />
+            ))}
           </div>
         </div>
       </section>
