@@ -1,35 +1,185 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
-    <>
-      <Navbar />
-      <main style={{ background: "#fff", minHeight: "100vh", color: "#1e3a8a", padding: "2rem" }}>
-        <section style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" }}>
-          <img
-            src="/profile.jpg"
-            alt="Profile Placeholder"
-            style={{
-              width: 120,
-              height: 120,
-              borderRadius: "50%",
-              objectFit: "cover",
+    <main style={{ background: "#fff", minHeight: "100vh", color: "#333" }}>
+      {/* Hero Section */}
+      <section style={{ 
+        maxWidth: "1200px", 
+        margin: "0 auto", 
+        padding: "4rem 2rem",
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: "4rem",
+        alignItems: "center"
+      }}>
+          <div>
+            <img
+              src="/profile.jpg"
+              alt="Peter Abangan"
+              style={{
+                width: 80,
+                height: 80,
+                borderRadius: "50%",
+                objectFit: "cover",
+                marginBottom: "2rem"
+              }}
+            />
+            <h1 style={{ 
+              fontSize: "3rem", 
+              fontWeight: 700, 
               marginBottom: "1.5rem",
-              boxShadow: "0 2px 8px rgba(30,58,138,0.08)"
-            }}
-          />
-          <h1 style={{ fontSize: "2.5rem", fontWeight: 700, marginBottom: "1rem" }}>About Me</h1>
-          <p style={{ fontSize: "1.2rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
-            Hi, I'm Peter Abangan. I'm passionate about building impactful digital experiences and sharing my journey as a developer. Welcome to my minimalist portfolio!
-          </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem" }}>
-          <img src="https://placehold.co/100x100/2563eb/fff?text=Skill+1" alt="Skill 1" style={{ borderRadius: "1rem" }} />
-          <img src="https://placehold.co/100x100/2563eb/fff?text=Skill+2" alt="Skill 2" style={{ borderRadius: "1rem" }} />
-          <img src="https://placehold.co/100x100/2563eb/fff?text=Skill+3" alt="Skill 3" style={{ borderRadius: "1rem" }} />
-        </div>
-      </section>
-    </main>
-    </>
+              color: "#333",
+              lineHeight: 1.2
+            }}>
+              Full-stack web and mobile app developer, and amateur astronaut.
+            </h1>
+            <p style={{ 
+              fontSize: "1.1rem", 
+              lineHeight: 1.6, 
+              marginBottom: "2rem",
+              color: "#666"
+            }}>
+              I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
+            </p>
+            
+            {/* Social Icons */}
+            <div style={{ display: "flex", gap: "1rem", marginBottom: "3rem" }}>
+              <a href="#" style={{ color: "#666", fontSize: "1.5rem" }}>🐦</a>
+              <a href="#" style={{ color: "#666", fontSize: "1.5rem" }}>💼</a>
+              <a href="#" style={{ color: "#666", fontSize: "1.5rem" }}>📚</a>
+              <a href="#" style={{ color: "#666", fontSize: "1.5rem" }}>📷</a>
+              <a href="#" style={{ color: "#666", fontSize: "1.5rem" }}>💻</a>
+            </div>
+          </div>
+          
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{
+              width: "400px",
+              height: "400px",
+              backgroundColor: "#f0f0f0",
+              borderRadius: "1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(circle, #ddd 1px, transparent 1px)",
+              backgroundSize: "20px 20px",
+              position: "relative"
+            }}>
+              <div style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "#000",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
+                <span style={{ color: "#fff", fontSize: "2rem" }}>🚀</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Projects Section */}
+        <section style={{ 
+          backgroundColor: "#f8f9fa",
+          padding: "4rem 2rem"
+        }}>
+          <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
+            <h2 style={{ 
+              fontSize: "2.5rem", 
+              fontWeight: 700, 
+              marginBottom: "1rem",
+              color: "#333"
+            }}>
+              Featured Projects
+            </h2>
+            <p style={{ 
+              fontSize: "1.1rem", 
+              color: "#666", 
+              marginBottom: "3rem",
+              maxWidth: "600px",
+              margin: "0 auto 3rem auto"
+            }}>
+              Here are some of the projects I've worked on recently. Each one represents a unique challenge and learning experience.
+            </p>
+            
+            {/* Projects Grid */}
+            <div style={{ 
+              display: "grid", 
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
+              gap: "2rem",
+              marginTop: "2rem"
+            }}>
+              <div style={{
+                backgroundColor: "#fff",
+                padding: "2rem",
+                borderRadius: "1rem",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                textAlign: "left"
+              }}>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "1rem", color: "#333" }}>
+                  Project One
+                </h3>
+                <p style={{ color: "#666", marginBottom: "1rem" }}>
+                  A comprehensive web application built with React and Node.js, featuring real-time data processing and user authentication.
+                </p>
+                <a href="#" style={{ 
+                  color: "#1e3a8a", 
+                  textDecoration: "none", 
+                  fontWeight: 500
+                }}>
+                  View Project →
+                </a>
+              </div>
+              
+              <div style={{
+                backgroundColor: "#fff",
+                padding: "2rem",
+                borderRadius: "1rem",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                textAlign: "left"
+              }}>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "1rem", color: "#333" }}>
+                  Project Two
+                </h3>
+                <p style={{ color: "#666", marginBottom: "1rem" }}>
+                  A mobile application developed with React Native, providing seamless cross-platform experience with offline capabilities.
+                </p>
+                <a href="#" style={{ 
+                  color: "#1e3a8a", 
+                  textDecoration: "none", 
+                  fontWeight: 500
+                }}>
+                  View Project →
+                </a>
+              </div>
+              
+              <div style={{
+                backgroundColor: "#fff",
+                padding: "2rem",
+                borderRadius: "1rem",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                textAlign: "left"
+              }}>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "1rem", color: "#333" }}>
+                  Project Three
+                </h3>
+                <p style={{ color: "#666", marginBottom: "1rem" }}>
+                  An innovative API service built with Express.js and MongoDB, handling millions of requests with optimized performance.
+                </p>
+                <a href="#" style={{ 
+                  color: "#1e3a8a", 
+                  textDecoration: "none", 
+                  fontWeight: 500
+                }}>
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
   );
 }
