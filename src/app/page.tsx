@@ -32,7 +32,7 @@ export default function About() {
               color: "#333",
               lineHeight: 1.2
             }}>
-              Full-stack web and mobile app developer, and amateur astronaut.
+              Full-stack web and mobile app developer.
             </h1>
             <p style={{ 
               fontSize: "1.1rem", 
@@ -40,7 +40,10 @@ export default function About() {
               marginBottom: "2rem",
               color: "#666"
             }}>
-              I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
+              From a young age, I enjoyed building custom game levels—an early sign of my passion for creating and
+              coding. Today, I channel that same creativity and logic into developing clean, user-focused applications
+              and solving real-world problems using my new and strong foundation in algorithms, data structures, and
+              full-stack development.
             </p>
             
             {/* Social Icons */}
