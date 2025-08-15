@@ -3,18 +3,36 @@ import React from "react";
 export default function About() {
   return (
     <main style={{ background: "#fff", minHeight: "100vh", color: "#333" }}>
+      {/* Title Section */}
+      <section style={{ 
+        maxWidth: "1200px", 
+        margin: "0 auto", 
+        padding: "3rem 2rem 0 2rem",
+        textAlign: "center"
+      }}>
+        <h1 style={{ 
+          fontSize: "3rem", 
+          fontWeight: 700, 
+          color: "#333",
+          marginBottom: "0",
+          letterSpacing: "0.05em"
+        }}>
+          Abangan, Jaerian Peter M.
+        </h1>
+      </section>
+
       {/* Hero Section */}
       <section style={{ 
         maxWidth: "1200px", 
         margin: "0 auto", 
-        padding: "4rem 2rem",
+        padding: "6rem 2rem 4rem 2rem",
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
         gap: "4rem",
         alignItems: "center"
       }}>
           <div>
-            <h1 style={{ 
+            <h2 style={{ 
               fontSize: "3rem", 
               fontWeight: 700, 
               marginBottom: "1.5rem",
@@ -22,7 +40,7 @@ export default function About() {
               lineHeight: 1.2
             }}>
               Full-stack web and mobile app developer.
-            </h1>
+            </h2>
             <p style={{ 
               fontSize: "1.1rem", 
               lineHeight: 1.6, 
@@ -74,7 +92,7 @@ export default function About() {
         }}>
           <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
             <h2 style={{ 
-              fontSize: "2.5rem", 
+              fontSize: "3rem", 
               fontWeight: 700, 
               marginBottom: "1rem",
               color: "#333"
