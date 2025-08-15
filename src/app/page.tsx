@@ -58,15 +58,6 @@ export default function About() {
             and solving real-world problems using my new and strong foundation in algorithms, data structures, and
             full-stack development.
           </p>
-          
-          {/* Social Icons */}
-          <div className="social-icons">
-            <a href="#" className="social-icon">🐦</a>
-            <a href="#" className="social-icon">💼</a>
-            <a href="#" className="social-icon">📚</a>
-            <a href="#" className="social-icon">📷</a>
-            <a href="#" className="social-icon">💻</a>
-          </div>
         </div>
         
         <div className="profile-container">
